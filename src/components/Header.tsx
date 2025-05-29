@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
 import Flame from "../assets/flame.png";
+import Logo from "../assets/logo.png";
 
 const weekDays = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
 
@@ -41,6 +42,15 @@ export function Header() {
           </span>
         </div>
       </div>
+
+      <div className="flex-1 flex items-center justify-center">
+        <img src={Logo} alt="Logo" className="w-30 h-30" />
+        <div className="flex flex-col">
+        <h1 className="text-3xl font-bold">Rabbitracker</h1>
+        <p className="text-sm font-light">Smart tracking for daily habits</p>
+        </div>
+      </div>
+
       <div className="flex items-center gap-4">
         <div className="flex flex-col items-center">
           <button
